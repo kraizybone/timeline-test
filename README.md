@@ -67,8 +67,3 @@ For client side I used these libraries:
 - [react-redux-toastr](https://github.com/diegoddox/react-redux-toastr) - notification messages
 - [lodash](https://lodash.com/) - utility library
 - [Sass](https://sass-lang.com/) - css preprocessor
-
-### Improvements
-Better css modularity with [css-modules](https://github.com/gajus/react-css-modules).
-White labeling / theming [react-jss](https://github.com/cssinjs/react-jss).
-UI improvements on smaller devices?
