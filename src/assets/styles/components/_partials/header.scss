@@ -1,0 +1,19 @@
+@import '../../variables';
+
+.header {
+  height: $header-height;
+  background: $header-bg-color;
+  display: flex;
+  align-items: center;
+  padding: 0 1em;
+}
+
+.logo-site {
+  display: block;
+  height: 25px;
+  width: 25px;
+  margin-right: 1.25em;
+  img {
+    display: block;
+  }
+}

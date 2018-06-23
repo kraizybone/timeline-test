@@ -1,0 +1,13 @@
+@import '../variables';
+
+.note {
+  padding: 10px;
+  color: $timeline-detail-item-color;
+  font-size: 0.9em;
+  width: 100%;
+  min-height: 100px;
+  background-color: $note-bg-color;
+  border: 1px solid $timeline-detail-item-border-color;
+  resize: none;
+  border-radius: $timeline-detail-item-border-radius;
+}

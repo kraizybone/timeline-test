@@ -1,0 +1,39 @@
+@import '../variables';
+
+.report {
+  width: 100%;
+  display: flex;
+  background: $report-bg-color;
+  padding: 10px;
+  border-radius: $timeline-detail-item-border-radius;
+  border: 1px solid $timeline-detail-item-border-color;
+  margin-bottom: 10px;
+  align-items: center;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  &.report-empty {
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    font-size: $font-size-less;
+    padding: 10px 0;
+    color: #8a909b;
+    .icon {
+      display: inline-block;
+      margin-right: 5px;
+    }
+  }
+  .report__name {
+    font-size: $font-size-less;
+    color: $timeline-detail-item-color;
+    .icon {
+      display: inline-block;
+      margin-right: 5px;
+      color: $success;
+    }
+  }
+  .report__btn-download {
+    margin-left: auto;
+  }
+}

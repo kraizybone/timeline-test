@@ -1,0 +1,78 @@
+$zindex-base: 1;
+$zindex-base2: 2;
+$zindex-little: 9;
+$zindex-more: 99;
+$zindex-huge: 999;
+$zindex-ultra: 9999;
+
+// COLORS
+$primary: #3797e5;
+$success: #28a855;
+$danger: red;
+$white: #fff;
+$black: #222;
+
+// SIZES
+$font-size-small: 0.7em;
+$font-size-less: 0.9em;
+$font-size-more: 1.2em;
+$font-size-big: 1.4em;
+$font-size-bigger: 1.8em;
+$font-size-huge: 2.5em;
+
+// VIEWPORTS
+$xs: 20em;
+$sm: 30em;
+$md: 48em;
+$lg: 75em;
+$xlg: 90em;
+
+// GRID CONFIG
+$flexboxgrid-breakpoints: xs $xs $xs, sm $sm $sm, md $md $md, lg $lg $lg, xlg $xlg $xlg;
+
+// BASIC
+$body-bg: #eff2f4;
+$base-font-size: 1em;
+
+$link-color: #15a8e0;
+$link-hover-color: darken($link-color, 20%);
+
+$header-height: 52px;
+$header-bg-color: #282c30;
+
+$nav-item-font-size: 0.8em;
+
+// TIMELINE
+$timeline-item-title-color: #68707a;
+$timeline-item-border-left-color: #e6e9ed;
+
+// TIMELINE DETAIL
+
+$timeline-detail-line-space: 20px;
+
+$timeline-detail-item-border-radius: 4px;
+$timeline-detail-item-border-color: #dadfe5;
+$timeline-detail-item-point-border-color: #8a909b;
+$timeline-detail-item-space-left: 15px;
+$timeline-detail-item-space-right: 20px;
+$timeline-detail-item-space-bottom: 20px;
+
+// SUMMARY BOX
+$summary-bg-color: $white;
+
+// REPORT
+$report-bg-color: $white;
+
+// NOTE
+$note-bg-color: transparent;
+
+// TABLE CREATIVES
+$creatives-border-color: #dadfe5;
+
+$timeline-detail-item-color: #42484f;
+
+$creatives-header-cell-bg-color: #f7f8f9;
+$creatives-body-cell-bg-color: $white;
+
+$creatives-cell-image-border-color: darken(#dadfe5, 10%);
+$creatives-cell-name-label-color: #68707a;

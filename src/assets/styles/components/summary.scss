@@ -1,0 +1,118 @@
+@import '../variables';
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  background: $summary-bg-color;
+  border: 1px solid $timeline-detail-item-border-color;
+  border-radius: $timeline-detail-item-border-radius;
+  .summary__item {
+    flex: 1;
+    border-right: 1px solid $timeline-detail-item-border-color;
+    padding: 15px;
+    min-width: 110px;
+    min-height: 90px;
+    .summary__label {
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #b4bcc6;
+      margin-bottom: 5px;
+    }
+    .summary__value {
+      font-size: 16px;
+      color: $timeline-detail-item-color;
+      font-weight: bold;
+    }
+    .summary__comp {
+      margin-top: 5px;
+      font-size: $font-size-small;
+      position: relative;
+      .icon {
+        display: inline-block;
+        margin-right: 2px;
+        position: relative;
+        top: 1px;
+        font-size: $font-size-more;
+      }
+    }
+    &.summary__item-inline-value {
+      .summary__value {
+        display: inline-block;
+      }
+      .summary__comp {
+        display: inline-block;
+        margin-top: 0;
+        margin-left: 5px;
+      }
+    }
+  }
+  .summary__header,
+  .summary__body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    .summary__row {
+      display: flex;
+      border-bottom: 1px solid $timeline-detail-item-border-color;
+      &:last-of-type {
+        border-bottom: none;
+      }
+      .summary__item {
+        &:last-of-type {
+          border-right: none;
+        }
+      }
+    }
+  }
+  .summary__header {
+    border-bottom: 1px solid $timeline-detail-item-border-color;
+    justify-content: center;
+    align-items: center;
+    .summary__row {
+      .summary__item {
+        text-align: center;
+      }
+    }
+  }
+  &.summary_goals {
+    .summary__body {
+      .summary__row {
+        flex-direction: column;
+      }
+    }
+    .summary__item {
+      min-width: 140px;
+      min-height: auto;
+      border-right: none;
+      border-bottom: 1px solid $timeline-detail-item-border-color;
+      &:last-of-type {
+        border-bottom: none;
+      }
+    }
+  }
+  &.summary_milestone {
+    flex-direction: row;
+    .summary__header {
+      border-bottom: none;
+      border-right: 1px solid $timeline-detail-item-border-color;
+    }
+  }
+  &.summary_boxoffice {
+    background-color: $success;
+    border-color: $success;
+    .summary__item {
+      min-width: 220px;
+      min-height: auto;
+      border: none;
+      .summary__value {
+        color: $white;
+      }
+      .summary__label {
+        color: rgba($white, 0.7);
+      }
+      .summary__comp {
+        color: rgba($white, 0.7);
+      }
+    }
+  }
+}
